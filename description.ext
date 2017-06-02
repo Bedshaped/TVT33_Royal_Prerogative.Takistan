@@ -1,0 +1,48 @@
+class Params
+{
+	class TimeToHold
+	{
+		title = "Time needed to hold prisoner"; // Param name visible in the list
+		values[] = {180,270,360,450,540}; // Values; must be integers; has to have the same number of elements as 'texts'
+		texts[] = {"30 minutes","45 minutes","1 hour","1 hour 15 minutes","1 hour 30 minutes"}; 
+		default = 270; 
+	};
+	class 3rdPersonCam
+	{
+		title = "3rd person view allowed";
+		values[] = {0,1,2};
+		texts[] = {"No (recommended)","Vehicles only","Infantry and vehicles"};
+		default = 0;
+	};
+};
+
+class CfgDebriefing
+{  
+	class End1
+	{
+		title = "BluFor Win";
+		subtitle = "Prince Harry Rescued";
+		description = "BluFor successfully rescued the Prince.";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0.0,0.0,0.0,1};
+	};
+	class End2
+	{
+		title = "Insurgents Win";
+		subtitle = "Information Retrieved";
+		description = "The insurgents successfully extracted the needed information.";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0.0,0.0,0.0,1};
+	};
+	class End3
+	{
+		title = "Both Sides Lose";
+		subtitle = "Target Killed";
+		description = "Prince Harry was killed. You fucking idiots";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0.0,0.0,0.0,1};
+	};
+};
